@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@theme {
+  --color-theme-white: hsl(0, 100%, 100%);
+  --color-theme-gray-500: hsl(0, 0%, 63%);
+  --color-theme-gray-800: hsl(0, 0%, 27%);
+  --color-theme-black: hsl(0, 0%, 0%);
+
+  --font-sans: "League Spartan", sans-serif;
+}

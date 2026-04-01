@@ -2,7 +2,7 @@
 
 <template>
   <main class="mx-auto max-w-360">
-    <div class="grid grid-cols-1 lg:grid-cols-2">
+    <div class="grid grid-cols-1 xl:grid-cols-[auto_1fr]">
       <div>
         <picture>
           <source
@@ -16,16 +16,17 @@
             alt="A simple room with desk with chairs and a bonsai tree on the table."
             width="375"
             height="360"
+            class="h-auto w-full object-cover"
           />
         </picture>
       </div>
-      <div class="px-8 py-15 xl:px-20 xl:pt-24">
+      <div class="min-w-0 px-8 py-15 xl:px-24 xl:pt-30">
         <h1
           class="mb-4 text-[2.4rem] leading-9 font-bold tracking-tighter xl:text-5xl xl:leading-11"
         >
           Discover innovative ways to decorate
         </h1>
-        <p class="mb-10 leading-5.5 tracking-[-0.02em] text-theme-gray-500">
+        <p class="mb-10 leading-5.5 tracking-[-0.02em] text-theme-gray-500 xl:mb-7">
           We provide unmatched quality, comfort, and style for property owners across the country.
           Our experts combine form and function in bringing your vision to life. Create a room in
           your own style with our collection and make your property a reflection of you and what you
@@ -37,7 +38,7 @@
         /></a>
       </div>
     </div>
-    <div class="grid grid-cols-1 xl:grid-cols-3">
+    <div class="grid grid-cols-1 lg:grid-cols-3">
       <div>
         <img
           src="/image-about-dark.jpg"

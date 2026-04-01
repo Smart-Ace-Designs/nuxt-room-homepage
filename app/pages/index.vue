@@ -2,14 +2,22 @@
 
 <template>
   <main>
-    <div class="grid grid-cols-1">
+    <div class="grid grid-cols-1 sm:grid-cols-2">
       <div>
-        <img
-          src="/mobile-image-hero-1.jpg"
-          alt="A simple room with desk with chairs and a bonsai tree on the table."
-          width="375"
-          height="360"
-        />
+        <picture>
+          <source
+            media="(min-width: 375px)"
+            srcset="/desktop-image-hero-1.jpg"
+            width="840"
+            height="534"
+          />
+          <img
+            src="/mobile-image-hero-1.jpg"
+            alt="A simple room with desk with chairs and a bonsai tree on the table."
+            width="375"
+            height="360"
+          />
+        </picture>
       </div>
       <div class="px-8 py-15">
         <h1 class="mb-4 text-[2.4rem] leading-9 font-bold tracking-tighter">

@@ -2,8 +2,8 @@
 
 <template>
   <main>
-    <div class="grid grid-cols-1 sm:grid-cols-2">
-      <div>
+    <div class="grid grid-cols-1 sm:grid-cols-3">
+      <div class="sm:col-span-2">
         <picture>
           <source
             media="(min-width: 375px)"
@@ -40,6 +40,7 @@
           alt="An elegant room with bed, coffee table and chairs."
           width="420"
           height="266"
+          class="h-full w-full object-cover"
         />
       </div>
       <div class="px-8 py-12">
@@ -60,6 +61,7 @@
           alt="A faded room with a single chair."
           width="420"
           height="266"
+          class="h-full w-full object-cover"
         />
       </div>
     </div>

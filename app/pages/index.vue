@@ -2,8 +2,8 @@
 
 <template>
   <main>
-    <div class="grid grid-cols-1 sm:grid-cols-3">
-      <div class="sm:col-span-2">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+      <div>
         <picture>
           <source
             media="(min-width: 375px)"
@@ -19,8 +19,10 @@
           />
         </picture>
       </div>
-      <div class="px-8 py-15">
-        <h1 class="mb-4 text-[2.4rem] leading-9 font-bold tracking-tighter">
+      <div class="px-8 py-15 lg:px-20 lg:py-24">
+        <h1
+          class="mb-4 text-[2.4rem] leading-9 font-bold tracking-tighter lg:text-5xl lg:leading-11"
+        >
           Discover innovative ways to decorate
         </h1>
         <p class="mb-10 leading-5.5 tracking-[-0.02em] text-theme-gray-500">
@@ -34,16 +36,18 @@
           <img src="/icon-arrow.svg" alt=""
         /></a>
       </div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3">
       <div>
         <img
           src="/image-about-dark.jpg"
           alt="An elegant room with bed, coffee table and chairs."
           width="420"
           height="266"
-          class="h-full w-full object-cover"
+          class="h-auto w-full object-cover"
         />
       </div>
-      <div class="px-8 py-12">
+      <div class="px-8 py-12 lg:px-16 lg:py-24">
         <h1 class="mb-4 text-[0.90rem] font-bold tracking-[0.3em] uppercase">
           About our furniture
         </h1>
@@ -61,7 +65,7 @@
           alt="A faded room with a single chair."
           width="420"
           height="266"
-          class="h-full w-full object-cover"
+          class="h-auto w-full object-cover"
         />
       </div>
     </div>

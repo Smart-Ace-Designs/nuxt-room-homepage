@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main>
+  <main class="mx-auto max-w-360">
     <div class="grid grid-cols-1 lg:grid-cols-2">
       <div>
         <picture>
@@ -19,9 +19,9 @@
           />
         </picture>
       </div>
-      <div class="px-8 py-15 lg:px-20 lg:py-24">
+      <div class="px-8 py-15 xl:px-20 xl:pt-24">
         <h1
-          class="mb-4 text-[2.4rem] leading-9 font-bold tracking-tighter lg:text-5xl lg:leading-11"
+          class="mb-4 text-[2.4rem] leading-9 font-bold tracking-tighter xl:text-5xl xl:leading-11"
         >
           Discover innovative ways to decorate
         </h1>
@@ -37,7 +37,7 @@
         /></a>
       </div>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-3">
+    <div class="grid grid-cols-1 xl:grid-cols-3">
       <div>
         <img
           src="/image-about-dark.jpg"
@@ -47,7 +47,7 @@
           class="h-auto w-full object-cover"
         />
       </div>
-      <div class="px-8 py-12 lg:px-16 lg:py-24">
+      <div class="px-8 py-12 xl:px-16 xl:py-10">
         <h1 class="mb-4 text-[0.90rem] font-bold tracking-[0.3em] uppercase">
           About our furniture
         </h1>

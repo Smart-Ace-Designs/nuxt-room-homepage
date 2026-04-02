@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const currentImageIndex = ref(0);
+</script>
 
 <template>
   <main class="mx-auto max-w-360">
@@ -7,12 +9,12 @@
         <picture>
           <source
             media="(min-width: 375px)"
-            srcset="/desktop-image-hero-1.jpg"
+            :srcset="`/desktop-image-hero-${currentImageIndex + 1}.jpg`"
             width="840"
             height="534"
           />
           <img
-            src="/mobile-image-hero-1.jpg"
+            :src="`/mobile-image-hero-${currentImageIndex + 1}.jpg`"
             alt="A simple room with desk with chairs and a bonsai tree on the table."
             width="375"
             height="360"
@@ -22,16 +24,24 @@
         <div
           class="absolute right-0 bottom-0 flex bg-theme-black 2xl:right-auto 2xl:left-full 2xl:translate-x-0"
         >
-          <div class="px-8.5 py-7 transition-colors duration-300 hover:bg-theme-gray-500">
+          <button
+            class="cursor-pointer px-8.5 py-7 transition-colors duration-300 hover:bg-theme-gray-500"
+            type="button"
+            @click="currentImageIndex = (currentImageIndex - 1 + 3) % 3"
+          >
             <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
               <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd" />
             </svg>
-          </div>
-          <div class="px-8 py-7 transition-colors duration-300 hover:bg-theme-gray-500">
+          </button>
+          <button
+            class="cursor-pointer px-8 py-7 transition-colors duration-300 hover:bg-theme-gray-500"
+            type="button"
+            @click="currentImageIndex = (currentImageIndex + 1) % 3"
+          >
             <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd" />
             </svg>
-          </div>
+          </button>
         </div>
       </div>
       <div class="min-w-0 px-8 py-14 2xl:pt-30 xl:px-24">

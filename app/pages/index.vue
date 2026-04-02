@@ -20,7 +20,7 @@
           />
         </picture>
       </div>
-      <div class="min-w-0 px-8 py-15 theme:pt-30 xl:px-24">
+      <div class="min-w-0 px-8 py-15 2xl:pt-30 xl:px-24">
         <h1
           class="mb-4 text-[2.4rem] leading-9 font-bold tracking-tighter xl:text-5xl xl:leading-11"
         >
@@ -49,7 +49,7 @@
         />
       </div>
       <div class="px-8 py-12 lg:p-2 xl:px-16 xl:py-10">
-        <h1 class="mb-4 text-[0.90rem] font-bold tracking-[0.3em] uppercase theme:mb-4 lg:mb-1">
+        <h1 class="theme:mb-4 mb-4 text-[0.90rem] font-bold tracking-[0.3em] uppercase lg:mb-1">
           About our furniture
         </h1>
         <p class="leading-5.5 tracking-[-0.02em] text-theme-gray-500">

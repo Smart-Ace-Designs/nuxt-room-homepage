@@ -3,7 +3,7 @@
 <template>
   <main class="mx-auto max-w-360">
     <div class="grid grid-cols-1 xl:grid-cols-[auto_1fr]">
-      <div>
+      <div class="relative">
         <picture>
           <source
             media="(min-width: 375px)"
@@ -19,6 +19,20 @@
             class="h-auto w-full object-cover"
           />
         </picture>
+        <div
+          class="absolute right-0 bottom-0 flex bg-theme-black 2xl:right-auto 2xl:left-full 2xl:translate-x-0"
+        >
+          <div class="px-8.5 py-7 transition-colors duration-300 hover:bg-theme-gray-500">
+            <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="px-8 py-7 transition-colors duration-300 hover:bg-theme-gray-500">
+            <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd" />
+            </svg>
+          </div>
+        </div>
       </div>
       <div class="min-w-0 px-8 py-14 2xl:pt-30 xl:px-24">
         <h1

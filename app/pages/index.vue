@@ -20,7 +20,7 @@
           />
         </picture>
       </div>
-      <div class="min-w-0 px-8 py-15 xl:px-24 xl:pt-30">
+      <div class="min-w-0 px-8 py-15 theme:pt-30 xl:px-24">
         <h1
           class="mb-4 text-[2.4rem] leading-9 font-bold tracking-tighter xl:text-5xl xl:leading-11"
         >
@@ -45,11 +45,11 @@
           alt="An elegant room with bed, coffee table and chairs."
           width="420"
           height="266"
-          class="h-auto w-full object-cover"
+          class="h-auto w-full object-cover lg:h-auto lg:w-auto lg:object-none"
         />
       </div>
-      <div class="px-8 py-12 xl:px-16 xl:py-10">
-        <h1 class="mb-4 text-[0.90rem] font-bold tracking-[0.3em] uppercase">
+      <div class="px-8 py-12 lg:p-2 xl:px-16 xl:py-10">
+        <h1 class="mb-4 text-[0.90rem] font-bold tracking-[0.3em] uppercase theme:mb-4 lg:mb-1">
           About our furniture
         </h1>
         <p class="leading-5.5 tracking-[-0.02em] text-theme-gray-500">
@@ -66,7 +66,7 @@
           alt="A faded room with a single chair."
           width="420"
           height="266"
-          class="h-auto w-full object-cover"
+          class="h-auto w-full object-cover lg:h-auto lg:w-auto lg:object-none"
         />
       </div>
     </div>

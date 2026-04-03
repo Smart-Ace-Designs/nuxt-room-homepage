@@ -5,15 +5,19 @@ import { links } from "~/assets/data/links";
 <template>
   <header>
     <nav
-      class="absolute inset-x-0 top-0 z-10 flex items-center gap-x-15 bg-transparent px-5 py-12 md:p-15"
+      class="absolute inset-x-0 top-0 z-10 grid grid-cols-3 items-center px-5 py-12 md:flex md:gap-x-15 md:p-15"
     >
       <button type="button" class="cursor-pointer md:hidden">
         <svg width="20" height="14" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z" fill="#FFF" fill-rule="evenodd" />
         </svg>
       </button>
-      <NuxtLink to="/"><img src="/logo.svg" alt="Logo" /></NuxtLink>
-      <ul class="hidden gap-8 text-[0.9375rem] text-theme-white md:flex">
+
+      <div class="justify-self-center">
+        <NuxtLink to="/"><img src="/logo.svg" alt="Logo" /></NuxtLink>
+      </div>
+
+      <ul class="hidden gap-8 text-[0.9375rem] text-theme-white md:flex md:justify-self-end">
         <li v-for="link in links" :key="link.title">
           <NuxtLink
             :to="link.url"

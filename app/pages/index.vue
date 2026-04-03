@@ -24,12 +24,12 @@ const currentImageIndex = ref(0);
         <div
           class="absolute inset-x-0 top-0 z-10 flex items-center gap-x-15 bg-transparent px-15 py-15"
         >
-          <a href="/"><img src="/logo.svg" alt="" /></a>
+          <NuxtLink to="/"><img src="/logo.svg" alt="" /></NuxtLink>
           <ul class="flex gap-8 text-[0.9375rem] text-theme-white">
-            <li><a href="/">home</a></li>
-            <li><a href="/">shop</a></li>
-            <li><a href="/">about</a></li>
-            <li><a href="/">contact</a></li>
+            <li><NuxtLink to="/">home</NuxtLink></li>
+            <li><NuxtLink to="/">shop</NuxtLink></li>
+            <li><NuxtLink to="/">about</NuxtLink></li>
+            <li><NuxtLink to="/">contact</NuxtLink></li>
           </ul>
         </div>
         <div
@@ -67,10 +67,10 @@ const currentImageIndex = ref(0);
           your own style with our collection and make your property a reflection of you and what you
           love.
         </p>
-        <a href="/" class="flex items-center gap-5"
+        <NuxtLink to="/" class="flex items-center gap-5"
           ><span class="font-semibold tracking-[0.7em] uppercase">Shop Now</span>
           <img src="/icon-arrow.svg" alt=""
-        /></a>
+        /></NuxtLink>
       </div>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-[auto_1fr_auto]">

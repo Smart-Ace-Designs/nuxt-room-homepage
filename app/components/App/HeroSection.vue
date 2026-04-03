@@ -7,6 +7,7 @@ const currentImageIndex = ref(0);
 <template>
   <section class="relative grid grid-cols-1 xl:grid-cols-[auto_1fr]">
     <div class="relative">
+      <AppHeader />
       <picture>
         <source
           media="(min-width: 375px)"
@@ -22,7 +23,6 @@ const currentImageIndex = ref(0);
           class="h-auto w-full object-cover"
         />
       </picture>
-      <AppHeader />
       <div
         class="absolute right-0 bottom-0 flex bg-theme-black xl:right-auto xl:left-full xl:translate-x-0"
       >

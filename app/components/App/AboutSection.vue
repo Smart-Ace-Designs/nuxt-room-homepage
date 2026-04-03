@@ -1,14 +1,14 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="grid grid-cols-1 lg:grid-cols-[auto_1fr_auto]">
+  <section class="grid grid-cols-1 xl:grid-cols-[auto_1fr_auto]">
     <div>
       <img
         src="/image-about-dark.jpg"
         alt="An elegant room with bed, coffee table and chairs."
         width="420"
         height="266"
-        class="h-auto w-full object-cover lg:h-auto lg:w-auto lg:object-none"
+        class="h-auto w-full object-cover xl:h-auto xl:w-auto xl:object-none"
       />
     </div>
     <div class="bg-theme-white px-8 py-12 lg:p-2 xl:px-11 xl:py-15">
@@ -30,7 +30,7 @@
         alt="A faded room with a single chair."
         width="420"
         height="266"
-        class="h-auto w-full object-cover lg:h-auto lg:w-auto lg:object-none"
+        class="h-auto w-full object-cover xl:h-auto xl:w-auto xl:object-none"
       />
     </div>
   </section>

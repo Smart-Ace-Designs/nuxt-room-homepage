@@ -10,7 +10,7 @@ const currentImageIndex = ref(0);
       <AppHeader />
       <picture>
         <source
-          media="(min-width: 376px)"
+          media="(min-width: 640px)"
           :srcset="`/desktop-image-hero-${currentImageIndex + 1}.jpg`"
           width="840"
           height="534"

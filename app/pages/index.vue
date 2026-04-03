@@ -4,7 +4,7 @@ const currentImageIndex = ref(0);
 
 <template>
   <main class="mx-auto max-w-360">
-    <div class="grid grid-cols-1 xl:grid-cols-[auto_1fr]">
+    <div class="relative grid grid-cols-1 xl:grid-cols-[auto_1fr]">
       <div class="relative">
         <picture>
           <source
@@ -22,10 +22,21 @@ const currentImageIndex = ref(0);
           />
         </picture>
         <div
+          class="absolute inset-x-0 top-0 z-10 flex items-center gap-x-15 bg-transparent px-15 py-15"
+        >
+          <a href="/"><img src="/logo.svg" alt="" /></a>
+          <ul class="flex gap-8 text-[0.9375rem] text-theme-white">
+            <li><a href="/">home</a></li>
+            <li><a href="/">shop</a></li>
+            <li><a href="/">about</a></li>
+            <li><a href="/">contact</a></li>
+          </ul>
+        </div>
+        <div
           class="absolute right-0 bottom-0 flex bg-theme-black 2xl:right-auto 2xl:left-full 2xl:translate-x-0"
         >
           <button
-            class="cursor-pointer px-8.5 py-7 transition-colors duration-300 hover:bg-theme-gray-500"
+            class="cursor-pointer px-8.5 py-7 transition-colors duration-300 hover:bg-theme-gray-800"
             type="button"
             @click="currentImageIndex = (currentImageIndex - 1 + 3) % 3"
           >
@@ -34,7 +45,7 @@ const currentImageIndex = ref(0);
             </svg>
           </button>
           <button
-            class="cursor-pointer px-8 py-7 transition-colors duration-300 hover:bg-theme-gray-500"
+            class="cursor-pointer px-8 py-7 transition-colors duration-300 hover:bg-theme-gray-800"
             type="button"
             @click="currentImageIndex = (currentImageIndex + 1) % 3"
           >

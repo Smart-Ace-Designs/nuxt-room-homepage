@@ -4,7 +4,7 @@ const currentImageIndex = ref(0);
 
 <template>
   <main class="mx-auto max-w-360">
-    <div class="relative grid grid-cols-1 xl:grid-cols-[auto_1fr]">
+    <section class="relative grid grid-cols-1 xl:grid-cols-[auto_1fr]">
       <div class="relative">
         <picture>
           <source
@@ -72,8 +72,8 @@ const currentImageIndex = ref(0);
           <img src="/icon-arrow.svg" alt=""
         /></NuxtLink>
       </div>
-    </div>
-    <div class="grid grid-cols-1 lg:grid-cols-[auto_1fr_auto]">
+    </section>
+    <section class="grid grid-cols-1 lg:grid-cols-[auto_1fr_auto]">
       <div>
         <img
           src="/image-about-dark.jpg"
@@ -106,6 +106,6 @@ const currentImageIndex = ref(0);
           class="h-auto w-full object-cover lg:h-auto lg:w-auto lg:object-none"
         />
       </div>
-    </div>
+    </section>
   </main>
 </template>

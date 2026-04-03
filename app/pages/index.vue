@@ -55,7 +55,7 @@ const currentImageIndex = ref(0);
           </button>
         </div>
       </div>
-      <div class="min-w-0 px-8 py-14 2xl:pt-30 xl:px-24">
+      <div class="min-w-0 bg-theme-white px-8 py-14 2xl:pt-30 xl:px-24">
         <h1
           class="mb-4 text-[2.4rem] leading-9 font-bold tracking-tighter xl:text-5xl xl:leading-11"
         >
@@ -83,7 +83,7 @@ const currentImageIndex = ref(0);
           class="h-auto w-full object-cover lg:h-auto lg:w-auto lg:object-none"
         />
       </div>
-      <div class="px-8 py-12 lg:p-2 xl:px-11 xl:py-10">
+      <div class="bg-theme-white px-8 py-12 lg:p-2 xl:px-11 xl:py-10">
         <h1 class="theme:mb-4 mb-4 text-[0.90rem] font-bold tracking-[0.3em] uppercase lg:mb-1">
           About our furniture
         </h1>

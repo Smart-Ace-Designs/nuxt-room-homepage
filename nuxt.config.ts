@@ -16,6 +16,9 @@ export default defineNuxtConfig({
       title: "Frontend Mentor | Room Homepage",
       meta: [{ name: "description", content: "A Frontend Mentor challenge." }],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon-32x32.png" }],
+      bodyAttrs: {
+        class: "bg-theme-white",
+      },
     },
   },
   modules: ["@nuxt/fonts"],

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import AppHeader from "./AppHeader.vue";
+
 const currentImageIndex = ref(0);
 </script>
 
@@ -20,41 +22,7 @@ const currentImageIndex = ref(0);
           class="h-auto w-full object-cover"
         />
       </picture>
-      <div
-        class="absolute inset-x-0 top-0 z-10 hidden items-center gap-x-15 bg-transparent px-15 py-15 md:flex"
-      >
-        <NuxtLink to="/"><img src="/logo.svg" alt="" /></NuxtLink>
-        <ul class="flex gap-8 text-[0.9375rem] text-theme-white">
-          <li>
-            <NuxtLink
-              to="/"
-              class="relative after:absolute after:-bottom-3 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-theme-white after:transition-all after:duration-300 hover:after:w-5"
-              >home</NuxtLink
-            >
-          </li>
-          <li>
-            <NuxtLink
-              to="/"
-              class="relative after:absolute after:-bottom-3 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-theme-white after:transition-all after:duration-300 hover:after:w-5"
-              >shop</NuxtLink
-            >
-          </li>
-          <li>
-            <NuxtLink
-              to="/"
-              class="relative after:absolute after:-bottom-3 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-theme-white after:transition-all after:duration-300 hover:after:w-5"
-              >about</NuxtLink
-            >
-          </li>
-          <li>
-            <NuxtLink
-              to="/"
-              class="relative after:absolute after:-bottom-2 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-theme-white after:transition-all after:duration-300 hover:after:w-5"
-              >contact</NuxtLink
-            >
-          </li>
-        </ul>
-      </div>
+      <AppHeader />
       <div
         class="absolute right-0 bottom-0 flex bg-theme-black xl:right-auto xl:left-full xl:translate-x-0"
       >

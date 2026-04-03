@@ -1,6 +1,4 @@
-<script setup lang="ts">
-const currentImageIndex = ref(0);
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <main class="mx-auto max-w-360">

@@ -83,8 +83,10 @@ const currentImageIndex = ref(0);
           class="h-auto w-full object-cover lg:h-auto lg:w-auto lg:object-none"
         />
       </div>
-      <div class="bg-theme-white px-8 py-12 lg:p-2 xl:px-11 xl:py-10">
-        <h1 class="theme:mb-4 mb-4 text-[0.90rem] font-bold tracking-[0.3em] uppercase lg:mb-1">
+      <div class="bg-theme-white px-8 py-12 lg:p-2 xl:px-11 xl:py-15">
+        <h1
+          class="theme:mb-4 mb-4 text-[0.90rem] font-bold tracking-[0.3em] uppercase lg:mb-2 xl:text-lg"
+        >
           About our furniture
         </h1>
         <p class="leading-5.5 tracking-[-0.02em] text-theme-gray-500">

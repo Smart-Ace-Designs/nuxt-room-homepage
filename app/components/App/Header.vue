@@ -12,7 +12,8 @@ const mobileMenuOpen = ref(false);
         type="button"
         class="cursor-pointer md:hidden"
         :aria-expanded="mobileMenuOpen"
-        aria-label="Toggle mobile menu"
+        aria-label="Mobile menu"
+        aria-controls="mobile-menu-id"
         @click="mobileMenuOpen = !mobileMenuOpen"
       >
         <svg width="20" height="14" xmlns="http://www.w3.org/2000/svg">

@@ -27,9 +27,11 @@ const currentImageIndex = ref(0);
         <button
           class="cursor-pointer px-5.5 py-4.5 transition-colors duration-300 hover:bg-theme-gray-800 xl:px-8.5 xl:py-7"
           type="button"
+          aria-label="Previous image"
           @click="currentImageIndex = (currentImageIndex - 1 + 3) % 3"
         >
           <svg
+            aria-hidden="true"
             class="h-4 w-3 md:h-6 md:w-3.5"
             viewBox="0 0 14 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -40,9 +42,11 @@ const currentImageIndex = ref(0);
         <button
           class="cursor-pointer px-5.5 py-4.5 transition-colors duration-300 hover:bg-theme-gray-800 xl:px-8 xl:py-7"
           type="button"
+          aria-label="Next image"
           @click="currentImageIndex = (currentImageIndex + 1) % 3"
         >
           <svg
+            aria-hidden="true"
             class="h-4 w-3 md:h-6 md:w-3.5"
             viewBox="0 0 14 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -50,6 +54,9 @@ const currentImageIndex = ref(0);
             <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd" />
           </svg>
         </button>
+      </div>
+      <div aria-live="polite" aria-atomic="true" class="sr-only">
+        Image {{ currentImageIndex + 1 }} of 3
       </div>
     </div>
     <div class="min-w-0 bg-theme-white px-8 py-16 2xl:px-24 2xl:pt-30">
@@ -65,7 +72,7 @@ const currentImageIndex = ref(0);
       </p>
       <NuxtLink to="/" class="flex items-center gap-5"
         ><span class="text-[15px] font-semibold tracking-[0.7em] uppercase">Shop Now</span>
-        <img src="/icon-arrow.svg" alt=""
+        <img src="/icon-arrow.svg" alt="" aria-hidden="true"
       /></NuxtLink>
     </div>
   </section>

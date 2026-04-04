@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  /* breakpoint-2xl is customized; override all breakpoints to allow for correct sorting in class list */
   --breakpoint-xl: 1280px;
   --breakpoint-2xl: 1440px;
   --breakpoint-3xl: 1536px;

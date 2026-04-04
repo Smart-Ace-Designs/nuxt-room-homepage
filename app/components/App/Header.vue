@@ -31,7 +31,11 @@ const mobileMenuOpen = ref(false);
           </NuxtLink>
         </li>
       </ul>
-      <AppMobileMenu :class="{ hidden: !mobileMenuOpen }" @close="mobileMenuOpen = false" />
+      <AppMobileMenu
+        :class="{ hidden: !mobileMenuOpen }"
+        :links="links"
+        @close="mobileMenuOpen = false"
+      />
     </nav>
   </header>
 </template>

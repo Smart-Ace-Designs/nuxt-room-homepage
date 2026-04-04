@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { links } from "~/assets/data/links";
+defineProps<{
+  links: Link[];
+}>();
 defineEmits(["close"]);
 </script>
 

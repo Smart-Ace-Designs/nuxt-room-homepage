@@ -6,7 +6,7 @@ defineEmits(["close"]);
 </script>
 
 <template>
-  <div class="absolute flex w-full items-center gap-17 bg-theme-white px-6 py-11">
+  <div class="absolute flex w-full items-center gap-17 bg-theme-white px-6 py-11 md:hidden">
     <button type="button" class="cursor-pointer" @click="$emit('close')">
       <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="text-theme-gray-500">
         <path

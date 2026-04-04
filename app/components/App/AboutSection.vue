@@ -11,9 +11,9 @@
         class="h-auto w-full object-cover xl:h-auto xl:w-auto xl:object-none"
       />
     </div>
-    <div class="bg-theme-white px-8 py-12 lg:p-2 xl:px-11 xl:py-15">
+    <div class="bg-theme-white px-8 py-12 xl:px-11 xl:py-10 2xl:py-15">
       <h1
-        class="theme:mb-4 mb-4 text-[0.90rem] font-bold tracking-[0.3em] uppercase lg:mb-2 xl:text-lg"
+        class="theme:mb-4 mb-4 text-[0.90rem] font-bold tracking-[0.3em] uppercase xl:text-lg lg:mb-2"
       >
         About our furniture
       </h1>

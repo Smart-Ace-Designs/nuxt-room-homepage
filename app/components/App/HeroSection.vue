@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import AppHeader from "./AppHeader.vue";
-
 const currentImageIndex = ref(0);
 </script>
 

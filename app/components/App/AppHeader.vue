@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { links } from "~/assets/data/links";
+const mobileMenuOpen = ref(false);
 </script>
 
 <template>
@@ -7,7 +8,11 @@ import { links } from "~/assets/data/links";
     <nav
       class="absolute inset-x-0 top-0 z-10 grid grid-cols-3 items-center px-5 py-12 md:flex md:gap-x-15 md:p-15"
     >
-      <button type="button" class="cursor-pointer md:hidden">
+      <button
+        type="button"
+        class="cursor-pointer md:hidden"
+        @click="mobileMenuOpen = !mobileMenuOpen"
+      >
         <svg width="20" height="14" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z" fill="#FFF" fill-rule="evenodd" />
         </svg>
@@ -26,6 +31,7 @@ import { links } from "~/assets/data/links";
           </NuxtLink>
         </li>
       </ul>
+      <AppMobileMenu :class="{ hidden: !mobileMenuOpen }" @close="mobileMenuOpen = false" />
     </nav>
   </header>
 </template>

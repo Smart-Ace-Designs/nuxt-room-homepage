@@ -52,7 +52,7 @@ const currentImageIndex = ref(0);
         </button>
       </div>
     </div>
-    <div class="min-w-0 bg-theme-white px-8 py-14 2xl:px-24 2xl:pt-30">
+    <div class="min-w-0 bg-theme-white px-8 py-16 2xl:px-24 2xl:pt-30">
       <h1
         class="mb-4 text-[2.45rem] leading-9 font-semibold tracking-tighter xl:text-5xl xl:leading-11"
       >

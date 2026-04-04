@@ -45,7 +45,9 @@ const currentImageIndex = ref(0);
       </div>
     </div>
     <div class="min-w-0 bg-theme-white px-8 py-14 2xl:px-24 2xl:pt-30">
-      <h1 class="mb-4 text-[2.4rem] leading-9 font-bold tracking-tighter xl:text-5xl xl:leading-11">
+      <h1
+        class="mb-4 text-[2.45rem] leading-9 font-semibold tracking-tighter xl:text-5xl xl:leading-11"
+      >
         Discover innovative ways to decorate
       </h1>
       <p class="mb-10 leading-5.5 tracking-[-0.02em] text-theme-gray-500 xl:mb-7">
@@ -54,7 +56,7 @@ const currentImageIndex = ref(0);
         style with our collection and make your property a reflection of you and what you love.
       </p>
       <NuxtLink to="/" class="flex items-center gap-5"
-        ><span class="font-semibold tracking-[0.7em] uppercase">Shop Now</span>
+        ><span class="text-[15px] font-semibold tracking-[0.7em] uppercase">Shop Now</span>
         <img src="/icon-arrow.svg" alt=""
       /></NuxtLink>
     </div>

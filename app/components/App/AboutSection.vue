@@ -12,11 +12,11 @@
       />
     </div>
     <div class="bg-theme-white px-8 py-12 xl:px-11 xl:py-10 2xl:py-15">
-      <h1
+      <h2
         class="theme:mb-4 mb-4 text-[0.90rem] font-bold tracking-[0.3em] uppercase xl:text-lg lg:mb-2"
       >
         About our furniture
-      </h1>
+      </h2>
       <p class="leading-5.5 tracking-[-0.02em] text-theme-gray-500">
         Our multifunctional collection blends design and function to suit your individual taste.
         Make each room unique, or pick a cohesive theme that best express your interests and what

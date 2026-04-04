@@ -25,20 +25,28 @@ const currentImageIndex = ref(0);
         class="absolute right-0 bottom-0 flex bg-theme-black xl:right-auto xl:left-full xl:translate-x-0"
       >
         <button
-          class="cursor-pointer px-4 py-3 transition-colors duration-300 hover:bg-theme-gray-800 xl:px-8.5 xl:py-7"
+          class="cursor-pointer px-5.5 py-4.5 transition-colors duration-300 hover:bg-theme-gray-800 xl:px-8.5 xl:py-7"
           type="button"
           @click="currentImageIndex = (currentImageIndex - 1 + 3) % 3"
         >
-          <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            class="h-4 w-3 md:h-6 md:w-3.5"
+            viewBox="0 0 14 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd" />
           </svg>
         </button>
         <button
-          class="cursor-pointer px-4 py-3 transition-colors duration-300 hover:bg-theme-gray-800 xl:px-8 xl:py-7"
+          class="cursor-pointer px-5.5 py-4.5 transition-colors duration-300 hover:bg-theme-gray-800 xl:px-8 xl:py-7"
           type="button"
           @click="currentImageIndex = (currentImageIndex + 1) % 3"
         >
-          <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            class="h-4 w-3 md:h-6 md:w-3.5"
+            viewBox="0 0 14 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd" />
           </svg>
         </button>

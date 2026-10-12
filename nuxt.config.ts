@@ -26,12 +26,9 @@ export default defineNuxtConfig({
     families: [
       {
         name: "League Spartan",
-        provider: "google",
         weights: [500, 600, 700],
         styles: ["normal"],
         subsets: ["latin"],
-        preload: true,
-        display: "swap",
       },
     ],
   },
